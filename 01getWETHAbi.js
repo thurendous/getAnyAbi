@@ -22,7 +22,7 @@ const getAbi = async () => {
 
 async function main() {
     await getAbi()
-    // console.log(abi)
+    console.log(abi)
 }
 
 main()

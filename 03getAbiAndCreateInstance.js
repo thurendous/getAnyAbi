@@ -13,7 +13,7 @@ const url = `https://api.polygonscan.com/api?module=contract&action=getabi&addre
 
 let abi
 const getAbi = async () => {
-    console.log(alchemyApi)
+    // console.log(alchemyApi)
     const res = await axios.get(url)
     abi = JSON.parse(res.data.result)
     const provider = new ethers.providers.JsonRpcProvider(alchemyApi)
